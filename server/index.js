@@ -17,6 +17,8 @@ app.use(cors());
 
 app.use('/posts', postRoutes);
 
+
+
 // https://www.mongodb.com/cloud/atlas
 
 // const CONNECTION_URL = 'mongodb+srv://first_MERN_Application:first_MERN_Application123@cluster0.g77mo.mongodb.net/mernappdb?retryWrites=true&w=majority';
@@ -27,3 +29,7 @@ mongoose.connect(process.env.CONNECTION_URL, {useNewUrlParser: true, useUnifiedT
     .catch((error) => console.log(error.message));
 
 mongoose.set('useFindAndModify', false);
+
+app.get('/', (req, res) => {
+    res.send('Hello to Memories API');
+});

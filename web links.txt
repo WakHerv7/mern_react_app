@@ -1,0 +1,2 @@
+CLIENT SIDE : https://upbeat-lichterman-3b85e5.netlify.app
+SERVER SIDE: https://first-mern-app-123.herokuapp.com/posts
